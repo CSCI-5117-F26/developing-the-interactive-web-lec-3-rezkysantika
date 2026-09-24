@@ -9,7 +9,7 @@ def add():
         first_name = request.form.get("fname")
         last_name = request.form.get("lname")
         return f"Your name is {first_name} {last_name}"
-    return render_template("form.html")
+    return render_template("guestbook.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
